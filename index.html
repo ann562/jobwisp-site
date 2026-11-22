@@ -7,9 +7,9 @@
 <meta name="description" content="Jobwisp is a free Chrome extension that fills job applications in one click, finds jobs that match your resume, and tracks every application. No AI. Your data stays private.">
 <meta property="og:title" content="Jobwisp: Apply to jobs in one click">
 <meta property="og:description" content="Fill job applications in one click, find jobs that match your resume, and track every application.">
-<meta property="og:image" content="assets/social.png">
 <link rel="icon" href="assets/logo.svg" type="image/svg+xml">
 <link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="mock.css">
 </head>
 <body>
 <a class="skip" href="#main">Skip to content</a>
@@ -45,8 +45,28 @@
         </div>
       </div>
       <div class="hero-art">
-        <div class="frame"><div class="bar"><b></b><b></b><b></b><span>careers.northwind.example/apply</span></div><img src="assets/hero.jpg" alt="A job application filled in by Jobwisp, with the Jobwisp panel showing every field checked off" width="1600" height="1031"></div>
-        <div class="badge"><i>⚡</i>12 fields filled in one click</div>
+        <div class="frame"><div class="bar"><b></b><b></b><b></b><span>careers.northwind.example/apply</span></div><div class="mock" role="img" aria-label="A job application filled in by Jobwisp, with the Jobwisp panel showing every field checked off"><div class="m-app" aria-hidden="true">
+  <div class="m-form">
+    <div class="m-co"><i>N</i>Northwind Studio</div>
+    <p class="m-title">Senior Marketing Manager</p><p class="m-sub">New York, NY (Hybrid) &nbsp; Full-time</p>
+    <div class="m-row"><div><p class="m-label">First name</p><div class="m-field on anim" style="animation-delay:0.2s">Jane</div></div><div><p class="m-label">Last name</p><div class="m-field on anim" style="animation-delay:0.3s">Doe</div></div></div>
+    <div class="m-row"><div><p class="m-label">Email</p><div class="m-field on anim" style="animation-delay:0.4s">jane.doe@gmail.com</div></div><div><p class="m-label">Phone</p><div class="m-field on anim" style="animation-delay:0.5s">(555) 123-4567</div></div></div>
+    <div class="m-row"><div><p class="m-label">Current company</p><div class="m-field on anim" style="animation-delay:0.6s">Acme Corp</div></div><div><p class="m-label">Current title</p><div class="m-field on anim" style="animation-delay:0.7s">Marketing Manager</div></div></div>
+    <div><p class="m-label">Resume/CV</p><div class="m-field on anim" style="animation-delay:0.8s">jane-doe-resume.pdf</div></div>
+    <div><p class="m-label">Why do you want to work at Northwind?</p><div class="m-field on anim" style="animation-delay:0.9s">I've followed Northwind's campaigns for years...</div></div>
+    <div><p class="m-label">Portfolio link</p><div class="m-field"></div></div>
+  </div>
+  <div class="m-panel">
+    <div class="hd"><img src="assets/logo.svg" alt="">Jobwisp</div>
+    <div class="m-status">Filled 9 fields. 1 needs you.</div>
+    <div class="m-check">First name<b></b></div><div class="m-check">Last name<b></b></div><div class="m-check">Email<b></b></div>
+    <div class="m-check">Phone<b></b></div><div class="m-check">Current company<b></b></div><div class="m-check">Current title<b></b></div>
+    <div class="m-check">Resume/CV<b></b></div><div class="m-check">Work authorization<b></b></div><div class="m-check">Why Northwind?<b></b></div>
+    <div class="m-check need">Portfolio link<b></b></div>
+    <div class="m-bar"><i></i><span>9/10 filled</span></div>
+  </div>
+</div></div></div>
+        <div class="badge"><i>⚡</i>Filled in one click</div>
       </div>
     </div>
   </section>
@@ -64,7 +84,15 @@
           <li>Works on Greenhouse, Lever, Ashby and most career pages</li>
         </ul>
       </div>
-      <div class="frame"><div class="bar"><b></b><b></b><b></b><span>Your saved work history</span></div><img src="assets/work.jpg" alt="Jobwisp's work history list with a job's title, company, dates and description" loading="lazy"></div>
+      <div class="frame"><div class="bar"><b></b><b></b><b></b><span>Your saved work history</span></div><div class="mock" role="img" aria-label="Jobwisp's work history list with a job's title, company, dates and description"><div aria-hidden="true">
+  <div class="m-card"><div class="m-head"><span class="ic">💼</span><div><strong>Most recent job</strong><small>Marketing Manager at Acme Corp</small></div></div>
+    <div class="m-row"><div><p class="m-label">Job title</p><div class="m-field">Marketing Manager</div></div><div><p class="m-label">Company</p><div class="m-field">Acme Corp</div></div></div>
+    <div class="m-row"><div><p class="m-label">Start date</p><div class="m-field">March 2021</div></div><div><p class="m-label">End date</p><div class="m-field">Month / Year</div></div></div>
+    <div class="m-tick"><i></i>I work here now</div>
+    <p class="m-label">What you did</p><div class="m-box">Led a team of 5 marketers across 3 product lines. Grew organic traffic 140% in two years.</div></div>
+  <div class="m-card"><div class="m-head"><span class="ic">💼</span><div><strong>Job 2</strong><small>Marketing Coordinator at Bright Media LLC</small></div></div>
+    <div class="m-row"><div><p class="m-label">Start date</p><div class="m-field">June 2018</div></div><div><p class="m-label">End date</p><div class="m-field">February 2021</div></div></div></div>
+</div></div></div>
     </div>
   </section>
 
@@ -81,7 +109,14 @@
           <li>Search LinkedIn, Indeed and Google Jobs in one click</li>
         </ul>
       </div>
-      <div class="frame"><div class="bar"><b></b><b></b><b></b><span>Jobwisp Job Radar</span></div><img src="assets/radar.jpg" alt="Job Radar showing matching jobs near Garfield, NJ with Apply with Jobwisp buttons" loading="lazy"></div>
+      <div class="frame"><div class="bar"><b></b><b></b><b></b><span>Jobwisp Job Radar</span></div><div class="mock" role="img" aria-label="Job Radar showing matching jobs near Garfield, NJ with Apply with Jobwisp buttons"><div aria-hidden="true">
+  <p class="m-label">Job titles to look for</p>
+  <div class="m-chips"><span class="m-chip">Marketing Manager ✕</span><span class="m-chip">Marketing Coordinator ✕</span></div>
+  <div class="m-row"><div><p class="m-label">Location</p><div class="m-field">📍 Garfield, NJ</div></div><div><p class="m-label">Work type</p><div class="m-types"><span>In person</span><span>Hybrid</span><span>Remote</span></div></div></div>
+  <div class="m-card m-job"><span class="m-logo">N</span><div><h4>Senior Marketing Manager</h4><p class="m-meta">Northwind &nbsp; New York, NY &nbsp; Yesterday</p><div class="m-why"><span>Matches “Marketing Manager”</span><span>In person</span><span>Near Garfield, NJ</span></div></div><span class="m-apply">⚡ Apply with Jobwisp</span></div>
+  <div class="m-card m-job"><span class="m-logo">G</span><div><h4>Marketing Manager, Growth</h4><p class="m-meta">Globex &nbsp; Remote - US &nbsp; 2 days ago</p><div class="m-why"><span>Matches “Marketing Manager”</span><span>Remote</span></div></div><span class="m-apply">⚡ Apply with Jobwisp</span></div>
+  <div class="m-card m-job"><span class="m-logo">I</span><div><h4>Marketing Coordinator</h4><p class="m-meta">Initech &nbsp; Hoboken, NJ &nbsp; 3 days ago</p><div class="m-why"><span>Matches “Marketing Coordinator”</span><span>Near Garfield, NJ</span></div></div><span class="m-apply">⚡ Apply with Jobwisp</span></div>
+</div></div></div>
     </div>
   </section>
 
@@ -97,7 +132,10 @@
           <li>Your whole job search at a glance</li>
         </ul>
       </div>
-      <div class="frame"><div class="bar"><b></b><b></b><b></b><span>Jobwisp Applications</span></div><img src="assets/tracker.jpg" alt="Jobwisp's Applications list with statuses like Interviewing and Offer" loading="lazy"></div>
+      <div class="frame"><div class="bar"><b></b><b></b><b></b><span>Jobwisp Applications</span></div><div class="mock" role="img" aria-label="Jobwisp's Applications list with statuses like Interviewing and Offer"><div aria-hidden="true">
+  <div class="m-stats"><div><b>5</b>tracked</div><div><b>2</b>applied</div><div><b>1</b>interviewing</div><div><b>1</b>offer</div></div>
+  <table class="m-table"><tr><th>Job</th><th>Date</th><th>Status</th></tr><tr><td><b>Senior Marketing Manager at Northwind</b><small>jobs.northwind.com</small></td><td>Nov 19</td><td><span class="m-pill int">Interviewing</span></td></tr><tr><td><b>Marketing Manager, Growth at Globex</b><small>jobs.globex.com</small></td><td>Nov 18</td><td><span class="m-pill ">Applied</span></td></tr><tr><td><b>Product Marketing Manager at Initech</b><small>jobs.initech.com</small></td><td>Nov 12</td><td><span class="m-pill offer">Offer</span></td></tr><tr><td><b>Lifecycle Marketing Manager at Brightline</b><small>jobs.brightline.com</small></td><td>Nov 20</td><td><span class="m-pill ">Applied</span></td></tr><tr><td><b>Brand Marketing Lead at Umbrella Co.</b><small>jobs.umbrellaco.com</small></td><td>Nov 7</td><td><span class="m-pill rej">Rejected</span></td></tr></table>
+</div></div></div>
     </div>
   </section>
 

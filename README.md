@@ -10,12 +10,10 @@ Live site (once GitHub Pages is on): https://ann562.github.io/jobwisp-site/
 
 ## To finish setup
 
-1. Upload the product screenshots into the `assets` folder:
-   `hero.jpg`, `work.jpg`, `radar.jpg`, `tracker.jpg`, `scan.jpg` and `social.png`.
-2. Turn on GitHub Pages: **Settings** > **Pages** > Source **Deploy from a branch**,
+1. Turn on GitHub Pages: **Settings** > **Pages** > Source **Deploy from a branch**,
    Branch **main**, folder **/ (root)**, then **Save**.
-3. Replace `YOUR-EMAIL@example.com` with your support email in `support.html` and `privacy.html`.
-4. After the extension is published, paste its Chrome Web Store link into `site.js`.
+2. Replace `YOUR-EMAIL@example.com` with your support email in `support.html` and `privacy.html`.
+3. After the extension is published, paste its Chrome Web Store link into `site.js`.
 
 ## Using your own domain later
 

@@ -1,0 +1,62 @@
+/* ---------- product illustrations (HTML, no image files needed) ---------- */
+.mock { background: #F6F7F9; padding: 18px; font: 13px/1.4 var(--sans); color: #1f2328; }
+.mock * { box-sizing: border-box; }
+.m-row { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; }
+.m-label { font-size: 11px; font-weight: 700; color: #3d4148; margin: 0 0 3px; }
+.m-field { height: 28px; border-radius: 6px; border: 1px solid #d0d7de; background: #fff; display: flex; align-items: center; padding: 0 9px; font-size: 12px; margin-bottom: 9px; overflow: hidden; white-space: nowrap; }
+.m-field.on { background: linear-gradient(90deg, rgba(209,195,248,.85), rgba(151,143,195,.45)); border-color: transparent; box-shadow: inset 0 -2px 0 #6A5FCC; }
+.m-field.on.anim { animation: fillsweep .6s ease-out both; }
+@keyframes fillsweep { from { background-size: 0% 100%; } to { background-size: 100% 100%; } }
+.m-app { display: grid; grid-template-columns: 1fr 190px; gap: 14px; align-items: start; }
+.m-form { background: #fff; border: 1px solid #e1e4e8; border-radius: 10px; padding: 14px; }
+.m-co { display: flex; align-items: center; gap: 8px; margin-bottom: 10px; font-weight: 700; font-size: 13.5px; }
+.m-co i { width: 22px; height: 22px; border-radius: 6px; background: #0f766e; color: #fff; display: grid; place-items: center; font-style: normal; font-size: 12px; }
+.m-title { font: 700 16px var(--sans); margin: 0 0 2px; }
+.m-sub { color: #57606a; font-size: 11.5px; margin: 0 0 12px; }
+.m-panel { background: #fff; border-radius: 12px; box-shadow: 0 16px 34px -14px rgba(24,36,133,.45); border-top: 3px solid; border-image: var(--grad) 1; padding: 10px; }
+.m-panel .hd { display: flex; align-items: center; gap: 6px; font: 700 13px var(--serif); margin-bottom: 8px; }
+.m-panel .hd img { width: 18px; height: 18px; border-radius: 5px; }
+.m-status { background: var(--tint); border-radius: 7px; padding: 6px 8px; font-weight: 700; font-size: 11.5px; margin-bottom: 6px; }
+.m-check { display: flex; justify-content: space-between; align-items: center; padding: 4px 2px; font-size: 11.5px; }
+.m-check b { width: 14px; height: 14px; border-radius: 50%; background: var(--grad) ; position: relative; flex: none; }
+.m-check b::after { content: ""; position: absolute; left: 4px; top: 3.5px; width: 5px; height: 3px; border: solid #fff; border-width: 0 0 1.6px 1.6px; transform: rotate(-45deg); }
+.m-check.need { color: #3D3290; }
+.m-check.need b { background: none; border: 1.5px dashed var(--lavender); }
+.m-check.need b::after { display: none; }
+.m-bar { height: 20px; border-radius: 10px; background: var(--tint); margin-top: 8px; position: relative; overflow: hidden; }
+.m-bar i { position: absolute; inset: 0 8% 0 0; background: var(--grad); border-radius: 10px; }
+.m-bar span { position: absolute; inset: 0; display: grid; place-items: center; color: #fff; font-weight: 700; font-size: 11px; }
+.m-card { background: #fff; border-radius: 12px; box-shadow: var(--card); padding: 14px; margin-bottom: 10px; }
+.m-card:last-child { margin-bottom: 0; }
+.m-head { display: flex; align-items: center; gap: 9px; margin-bottom: 10px; }
+.m-head .ic { width: 26px; height: 26px; border-radius: 8px; background: var(--tint); display: grid; place-items: center; color: var(--brand); }
+.m-head strong { font: 700 13.5px var(--serif); display: block; }
+.m-head small { color: #57606a; font-size: 11px; }
+.m-box { min-height: 44px; border-radius: 6px; border: 1px solid #d0d7de; background: #fff; padding: 6px 9px; font-size: 11.5px; color: #3d4148; }
+.m-tick { display: flex; align-items: center; gap: 6px; font-size: 11.5px; font-weight: 600; margin: -3px 0 9px; color: #3d4148; }
+.m-tick i { width: 13px; height: 13px; border-radius: 3px; background: var(--brand); position: relative; }
+.m-tick i::after { content: ""; position: absolute; left: 3.5px; top: 2.5px; width: 5px; height: 3px; border: solid #fff; border-width: 0 0 1.6px 1.6px; transform: rotate(-45deg); }
+.m-chips { display: flex; gap: 6px; flex-wrap: wrap; padding: 7px; border: 1px solid #d0d7de; border-radius: 8px; background: #fff; margin-bottom: 10px; }
+.m-chip { background: var(--tint); color: var(--brand); font-weight: 700; font-size: 11.5px; padding: 3px 9px; border-radius: 999px; }
+.m-types { display: flex; gap: 6px; margin-bottom: 12px; }
+.m-types span { background: var(--grad); color: #fff; font-weight: 700; font-size: 11.5px; padding: 6px 11px; border-radius: 8px; }
+.m-job { display: grid; grid-template-columns: 34px 1fr auto; gap: 10px; align-items: start; }
+.m-logo { width: 34px; height: 34px; border-radius: 9px; background: var(--grad); color: #fff; display: grid; place-items: center; font-weight: 800; }
+.m-job h4 { margin: 0; font-size: 13.5px; }
+.m-meta { color: #57606a; font-size: 11.5px; margin: 1px 0 6px; }
+.m-why { display: flex; gap: 5px; flex-wrap: wrap; }
+.m-why span { background: var(--tint); color: var(--brand); font-weight: 600; font-size: 10.5px; padding: 2px 7px; border-radius: 999px; }
+.m-apply { background: var(--grad); color: #fff; font-weight: 700; font-size: 11.5px; padding: 7px 11px; border-radius: 8px; white-space: nowrap; box-shadow: var(--glow); }
+.m-table { width: 100%; border-collapse: collapse; background: #fff; border-radius: 12px; overflow: hidden; box-shadow: var(--card); font-size: 12px; }
+.m-table th { text-align: left; font-size: 11px; color: #3d4148; padding: 9px 10px; border-bottom: 1px solid var(--rule); }
+.m-table td { padding: 9px 10px; border-bottom: 1px solid var(--rule); }
+.m-table tr:last-child td { border-bottom: 0; }
+.m-table td small { display: block; color: #57606a; font-size: 10.5px; }
+.m-pill { font-weight: 700; font-size: 10.5px; padding: 3px 8px; border-radius: 999px; background: var(--tint); color: var(--brand); white-space: nowrap; }
+.m-pill.offer { background: var(--grad); color: #fff; }
+.m-pill.int { background: #E6E9FB; color: #182485; }
+.m-pill.rej { background: #F0EEF4; color: #57606a; }
+.m-stats { display: flex; gap: 18px; margin-bottom: 12px; }
+.m-stats div { font-size: 11px; color: #3d4148; }
+.m-stats b { display: block; font: 700 20px var(--serif); color: #16141C; }
+@media (max-width: 560px) { .m-app { grid-template-columns: 1fr; } .m-job { grid-template-columns: 34px 1fr; } .m-apply { grid-column: 2; justify-self: start; } }
