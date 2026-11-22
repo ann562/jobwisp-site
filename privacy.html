@@ -20,10 +20,10 @@
 
 <main id="main" class="doc">
   <h1>Privacy Policy</h1>
-  <p class="meta">Effective date: November 21, 2026</p>
+  <p class="meta">Effective date: November 22, 2026</p>
 
   <div class="card">
-    <p><b>The short version:</b> Jobwisp keeps your profile and resume in your own browser. We don't run servers that store your information, we don't use AI, we don't sell data, and we don't show ads. Jobwisp only types your information into the job applications you choose to fill, and you always press Submit yourself.</p>
+    <p><b>The short version:</b> Jobwisp keeps your profile and resume in your own browser. Our only server handles subscriptions and never receives your profile or resume. We don't use AI, we don't sell data, and we don't show ads. Jobwisp only types your information into the job applications you choose to fill, and you always press Submit yourself.</p>
 
     <h2>Who we are</h2>
     <p>Jobwisp is a Chrome extension that fills job applications, suggests jobs that match your resume, and tracks the applications you fill. In this policy, "Jobwisp," "we" and "us" mean the developer of the Jobwisp extension. You can contact us at <a href="mailto:jobwisp@gmail.com">jobwisp@gmail.com</a>.</p>
@@ -36,9 +36,10 @@
       <li><b>Your applications list:</b> the title, web address and date of applications you fill, and the status you set.</li>
       <li><b>Job Radar settings and saved jobs:</b> the job titles, location and work types you search for, jobs you save, and companies you add.</li>
       <li><b>Settings and setup progress</b>, and your subscription status.</li>
+      <li><b>A random install ID</b>, created by Jobwisp, that links your copy of Jobwisp to a subscription. It contains no personal information.</li>
     </ul>
-    <p>This information stays on your computer. It is not sent to us, and we can't see it.</p>
-    <p><b>Daily usage count:</b> to count your free applications, Jobwisp keeps the web addresses of the applications you filled today. This count is saved in Chrome's sync storage, so if you've turned on Chrome Sync, Google syncs it between your signed-in Chrome browsers. It's reset each day.</p>
+    <p>Apart from the install ID described under Payments, this information stays on your computer. It is not sent to us, and we can't see it.</p>
+    <p><b>Daily usage count:</b> to count your free applications, Jobwisp keeps the web addresses of the applications you filled today. This count and your install ID are saved in Chrome's sync storage, so if you've turned on Chrome Sync, Google syncs them between your signed-in Chrome browsers. The daily count is reset each day.</p>
 
     <h2>Your resume scan</h2>
     <p>When you scan your resume, the file is read entirely inside your browser using built-in code. Your resume is not uploaded to us or to any other service, and no AI is used.</p>
@@ -49,7 +50,14 @@
     <h3>Job Radar</h3>
     <p>Job Radar loads public job listings directly from employers' job boards hosted by Greenhouse, Lever and Ashby. These requests ask for a company's list of open jobs; they don't include your profile, resume, job titles or location. Matching jobs to your job titles and location happens inside your browser. As with visiting any website, those services can see your device's IP address. The LinkedIn, Indeed, Google Jobs and ZipRecruiter buttons open a search on those sites with your job title and location, and those sites' privacy policies apply.</p>
     <h3>Payments</h3>
-    <p>Subscriptions are handled by ExtensionPay (extensionpay.com), with card payments processed by Stripe. If you subscribe, ExtensionPay receives your email address and payment status so it can confirm your subscription, and Stripe receives your payment details. Jobwisp never sees or stores your card number. To keep track of your subscription, ExtensionPay saves an identifier in your browser's extension storage and checks your subscription status with its servers. Please see the privacy policies of ExtensionPay and Stripe for how they handle your information.</p>
+    <p>Subscriptions are processed by Stripe (stripe.com). Jobwisp has a small payments server, hosted on Cloudflare, that talks to Stripe for the extension. It does four things:</p>
+    <ul>
+      <li><b>Starts a checkout:</b> sends your install ID to Stripe so your subscription is linked to your copy of Jobwisp. You enter your email and card details on Stripe's own checkout page.</li>
+      <li><b>Checks your plan:</b> Jobwisp sends your install ID to our server, which asks Stripe whether that ID has an active subscription and returns its status, renewal or end date, and the email on the subscription.</li>
+      <li><b>Opens Stripe's billing portal</b> when you choose Manage subscription, so you can cancel or update your card.</li>
+      <li><b>Restores a purchase:</b> if you use Restore your purchase, the email and invoice number you enter are sent to our server to find your subscription, which is then linked to your new install ID.</li>
+    </ul>
+    <p>Our server doesn't keep a database of its own: subscription details are stored by Stripe. Jobwisp never sees or stores your card number. Cloudflare, which hosts the server, and Stripe can see your device's IP address when Jobwisp contacts them. Please see Stripe's privacy policy for how it handles payment information.</p>
 
     <h2>What we don't do</h2>
     <ul>
@@ -61,8 +69,8 @@
 
     <h2>Why Jobwisp asks for its permissions</h2>
     <ul>
-      <li><b>Access to websites:</b> needed to fill application forms on whichever job site you choose, including forms embedded from another site, and to load public job listings for Job Radar. Jobwisp only reads and fills a page when you ask it to.</li>
-      <li><b>Storage:</b> to save your profile, resume and settings in your browser.</li>
+      <li><b>Access to websites:</b> needed to fill application forms on whichever job site you choose, including forms embedded from another site, to load public job listings for Job Radar, and to contact our payments server. Jobwisp only reads and fills a page when you ask it to.</li>
+      <li><b>Storage:</b> to save your profile, resume, settings and install ID in your browser.</li>
       <li><b>Scripting:</b> to run the autofill on the page you're viewing, only when you click Autofill, press the shortcut or choose Apply with Jobwisp.</li>
       <li><b>Extra storage space:</b> so your resume file (up to 10 MB) and profile can be saved in your browser.</li>
     </ul>
@@ -72,7 +80,8 @@
       <li>You can view and edit everything in your Jobwisp profile at any time, and remove any detail you don't want to use.</li>
       <li>You can export your profile to a file and import it on another computer.</li>
       <li>Removing Jobwisp from Chrome deletes the information it stored in your browser.</li>
-      <li>To manage or cancel a subscription, use Manage subscription in Jobwisp. To ask about information held by our payment provider, contact us and we'll help.</li>
+      <li>To manage or cancel a subscription, use Manage subscription in Jobwisp, or sign in to our <a href="https://billing.stripe.com/p/login/3cI14peBz0CA7znbjw8bS00">subscription management page</a> with your email from any device.</li>
+      <li>To ask about or delete subscription information held by Stripe, contact us and we'll help.</li>
     </ul>
 
     <h2>Security</h2>
