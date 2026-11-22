@@ -8,12 +8,13 @@ Home, support and privacy policy pages for the Jobwisp Chrome extension.
 
 Live site (once GitHub Pages is on): https://ann562.github.io/jobwisp-site/
 
+Support contact: jobwisp@gmail.com
+
 ## To finish setup
 
 1. Turn on GitHub Pages: **Settings** > **Pages** > Source **Deploy from a branch**,
    Branch **main**, folder **/ (root)**, then **Save**.
-2. Replace `YOUR-EMAIL@example.com` with your support email in `support.html` and `privacy.html`.
-3. After the extension is published, paste its Chrome Web Store link into `site.js`.
+2. After the extension is published, paste its Chrome Web Store link into `site.js`.
 
 ## Using your own domain later
 
